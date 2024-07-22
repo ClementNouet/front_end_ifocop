@@ -1,0 +1,354 @@
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-bold {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-regular-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .playfair-display-sc-bold-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .playfair-display-sc-black-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+.proza-libre-regular {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .proza-libre-medium {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .proza-libre-semibold {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .proza-libre-bold {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .proza-libre-extrabold {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .proza-libre-regular-italic {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .proza-libre-medium-italic {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .proza-libre-semibold-italic {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .proza-libre-bold-italic {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .proza-libre-extrabold-italic {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .navbar {
+    --bs-navbar-padding-x: -10; /* Ajustez selon vos besoins */
+    padding-left: var(--bs-navbar-padding-x);
+    padding-right: var(--bs-navbar-padding-x);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Proza Libre", sans-serif;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 0.6 ease-in;
+}
+
+footer a:hover, footer a:focus  {
+    font-size: 18px;
+}
+
+nav {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-lien {
+    font-size: 20px;
+    padding: 30px;
+    transition: background-color 0.5s ease;
+}
+
+.nav-lien a {
+    color: #1e1e1e;
+    font-size: 20px;
+    padding: 30px;
+    transition: color 0.3 ease-in;
+}
+
+.nav-lien:hover {
+    color: white;
+    background-color: #1fdb78;
+}
+
+.nav-lien a:hover {
+    color: white;
+}
+
+.nav-picto{
+    margin-left: 30px;
+}
+
+.picto-nav{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.2s ease;
+    z-index: 3;
+}
+
+.navigation:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.logo-nav {
+    padding-left: 30px;
+}
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-overlay {
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+}
+ .text-overlay h1{
+    font-family: "Playfair Display SC", serif;
+    font-size: 26px;
+    font-weight: 200;
+ }
+
+
+ .text-overlay p{
+    font-size: 22px;
+    font-weight: 200;
+ }
+
+ .btn-primary {
+    background-color: #1e1e1e;
+    border-radius: 0px;
+    border: none;
+ }
+
+ .btn-primary:hover {
+    background-color: #1fdb78;
+ }
+
+ .card {
+    border: 0px;
+    background-color: transparent;
+ }
+
+ .card:hover {
+    border: solide 1px #1fdb78;
+    box-shadow: 1px 2px 11px -4px  black;
+    background-color: white;
+ }
+
+ .card-title {
+    font-weight: 800;
+    font-size: 36px;
+    color: #1fdb78;
+ }
+ 
+ .carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajuster la largeur des boutons de contrôle */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: -50px; /* Ajuster la position verticale des flèches */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.carousel-nav button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.carousel-nav button span {
+    font-size: 2rem;
+    color: black;
+}
+
+ .prix {
+    font-weight: 600;
+    font-size: 26px;
+ }
+
+ .text-container {
+    position: relative;
+    overflow: hidden;
+    max-height: 4.5em; /* Adjust based on font size and line-height */
+}
+.text-container.expanded {
+    max-height: none; /* Remove height restriction when expanded */
+}
+.text-container p {
+    margin: 0;
+}
+.expand-button {
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    /* Style pour le footer */
+    .footer {
+        background-color: #1fdb78;
+        color: white;
+        padding: 20px 0;
+      }
+
+      .title {
+        font-family: "Playfair Display SC", serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 36px;
+      }
+      .footer .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .footer .separator {
+        border-top: 1px solid white;
+        margin-bottom: 10px;
+      }
+      .footer .nav-item {
+        margin-bottom: 5px;
+      }
+      .footer .social-icons img {
+        width: 24px;
+        margin: 0 10px;
+      }
+
+@media (max-width: 992px) {
+    .navbar {
+        transition: none;
+        opacity: 1;
+    }
+}
