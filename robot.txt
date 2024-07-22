@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.clement-nouet.com/sitemap.xml
+Sitemap: https://www.ostunihome.com/sitemap.xml
