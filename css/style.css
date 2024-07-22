@@ -107,17 +107,6 @@
     font-family: "Proza Libre", sans-serif;
 }
 
-footer a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 16px;
-    transition: font-size 0.6 ease-in;
-}
-
-footer a:hover, footer a:focus  {
-    font-size: 18px;
-}
-
 nav {
     padding: 0px;
     margin: 0px;
@@ -246,6 +235,8 @@ body, html {
     background-color: white;
  }
 
+
+
  .card-title {
     font-weight: 800;
     font-size: 36px;
@@ -275,7 +266,7 @@ body, html {
 
 .carousel-nav {
     position: absolute;
-    top: -50px; /* Ajuster la position verticale des flèches */
+    top: -50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -301,10 +292,10 @@ body, html {
  .text-container {
     position: relative;
     overflow: hidden;
-    max-height: 4.5em; /* Adjust based on font size and line-height */
+    max-height: 4.5em;
 }
 .text-container.expanded {
-    max-height: none; /* Remove height restriction when expanded */
+    max-height: none; 
 }
 .text-container p {
     margin: 0;
@@ -346,9 +337,25 @@ body, html {
         margin: 0 10px;
       }
 
-@media (max-width: 992px) {
-    .navbar {
-        transition: none;
-        opacity: 1;
+      footer a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 16px;
+        transition: font-size 0.6 ease-in;
     }
+    
+    footer a:hover, footer a:focus  {
+        font-size: 18px;
+    }
+
+@media (max-width: 1200px) {
+    .navigation {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .card {
+        border: solide 1px #1fdb78;
+        box-shadow: 1px 2px 11px -4px  black;
+        background-color: white;
+     }
 }
