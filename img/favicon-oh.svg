@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        font-size: 54.24px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: ErasITC-Bold, 'Eras Bold ITC';
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #1fdb78;
+        font-size: 99.43px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(4.4 82.93)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-1" transform="translate(53.24 82.93)"><tspan x="0" y="0">h</tspan></text>
+</svg>
