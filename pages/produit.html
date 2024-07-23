@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head> 
-<body>
+<body class="produit-page">
     <!--BARRE DE NAVIGATION-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-fond scrolled">
-        <div class="container-fluid d-flex justify-content-between align-items-center navigation scrolled">
-            <a href="index.html" class="navbar-brand">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-fond">
+        <div class="container-fluid d-flex justify-content-between align-items-center navigation">
+            <a href="../index.html" class="navbar-brand">
                 <img src="../img/logo_OH.png" alt="logo Ostuni Home" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,34 +28,45 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item nav-lien">
-                        <a class="nav-link couleur-texte" aria-current="page" href="#">Produit</a>
+                    <li class="nav-item nav-lien active">
+                        <a class="nav-link couleur-texte" aria-current="page" href="produit.html">Produit</a>
                     </li>
                     <li class="nav-item nav-lien">
-                        <a class="nav-link" href="#">Evènement</a>
+                        <a class="nav-link" href="evenements.html">Evènement</a>
                     </li>
                     <li class="nav-item nav-lien">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item nav-picto d-flex align-items-center">
-                        <a href="" class="me-2"><img src="../img/facebook_picto.svg" class="picto-nav" alt="Facebook"></a>
-                        <a href="" class="me-2"><img src="../img/twitter_picto.svg" class="picto-nav" alt="Twitter"></a>
-                        <a href=""><img src="../img/instagram_picto.svg" class="picto-nav" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" class="me-2" target="_blank"><img src="../img/facebook_picto.svg" class="picto-nav" alt="Facebook"></a>
+                        <a href="http://twitter.com/" class="me-2" target="_blank"><img src="../img/twitter_picto.svg" class="picto-nav" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram_picto.svg" class="picto-nav" alt="Instagram"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--MAIN-->
-    <div class="container mt-1">
+    <div class="container d-block margin-product margin-top-200">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-12 column-content">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="filter-container product-margin">
+                    <button class="filter-btn" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="salon">Salon</button>
+                    <button class="filter-btn" data-filter="salleDeBain">Salle de bain</button>
+                    <button class="filter-btn" data-filter="cuisine">Cuisine</button>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row products-container">
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="cuisine">
                 <div class="container mt-5">
-                    <div class="card">
+                    <div class="card product">
                         <img src="../img/tabouret.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
                         <div class="card-body">
                             <h5 class="card-title">Tipoa</h5>
-                            <div class="text-container" id="text-container">
+                            <div class="text-container">
                                 <p class="prix">625.89€</p>
                             </div>
                             <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
@@ -63,13 +74,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 column-content">
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salon">
                 <div class="container mt-5">
-                    <div class="card">
+                    <div class="card product">
                         <img src="../img/canape2.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
                         <div class="card-body">
                             <h5 class="card-title">Palav</h5>
-                            <div class="text-container" id="text-container">
+                            <div class="text-container">
                                 <p class="prix">954.89€</p>
                             </div>
                             <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
@@ -77,13 +88,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 column-content">
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salleDeBain">
                 <div class="container mt-5">
-                    <div class="card">
-                        <img src="../img/canape3.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                    <div class="card product">
+                        <img src="../img/sdb1.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
                         <div class="card-body">
-                            <h5 class="card-title">kaol</h5>
-                            <div class="text-container" id="text-container">
+                            <h5 class="card-title">Kaol</h5>
+                            <div class="text-container">
                                 <p class="prix">6273.15€</p>
                             </div>
                             <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
@@ -91,13 +102,72 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 column-content">
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salon">
                 <div class="container mt-5">
-                    <div class="card">
+                    <div class="card product">
                         <img src="../img/canape3.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
                         <div class="card-body">
-                            <h5 class="card-title">kaol</h5>
-                            <div class="text-container" id="text-container">
+                            <h5 class="card-title">Friging</h5>
+                            <div class="text-container">
+                                <p class="prix">2180.15€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salon">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/salon2.jpg " class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">Amole</h5>
+                            <div class="text-container" >
+                                <p class="prix">4563.89€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="cuisine">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/cuisine1.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">Lacom</h5>
+                            <div class="text-container" >
+                                <p class="prix">125.89€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salon">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/fauteil.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">bzak</h5>
+                            <div class="text-container">
+                                <p class="prix">516.15€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salon">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/salon3.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">Urloa</h5>
+                            <div class="text-container">
                                 <p class="prix">6273.15€</p>
                             </div>
                             <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
@@ -105,42 +175,103 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="cuisine">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/cuisine2.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">Volopo</h5>
+                            <div class="text-container">
+                                <p class="prix">876.89€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salleDeBain">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/sdb2.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">Colmap</h5>
+                            <div class="text-container" >
+                                <p class="prix">954.89€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 column-content" data-category="salleDeBain">
+                <div class="container mt-5">
+                    <div class="card product">
+                        <img src="../img/cuisine3.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
+                        <div class="card-body">
+                            <h5 class="card-title">Napo</h5>
+                            <div class="text-container" >
+                                <p class="prix">109.15€</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Voir la fiche produit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </div>    
+    </div>
+    </div>
    
         
     <footer class="footer mt-5">
         <div class="container">
-            <div class="row">
+          <div class="row">
             <!-- Colonne gauche -->
-            <div class="col-md-6">
-                <div class="title">Oh</div>
-                <div class="separator"></div>
-                <div class="nav-item"><a href="">Magasins</a></div>
-                <div class="nav-item"><a href="">Showroom</a></div>
-                <div class="nav-item"><a href="">Notre marque</a></div>
-                <div class="nav-item"><a href="">Service après-vente</a></div>
-                <div class="nav-item"><a href="">Nos distributeurs</a></div>
-                <div class="nav-item"><a href="">A propos</a></div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="title">Oh</div>
+              <div class="separator"></div>
+              <div class="nav-item"><a href="">Magasins</a></div>
+              <div class="nav-item"><a href="">Showroom</a></div>
+              <div class="nav-item"><a href="pages/evenements.html">Evènements</a></div>
+              <div class="nav-item"><a href="">Notre marque</a></div>
+              <div class="nav-item"><a href="">Service après-vente</a></div>
+              <div class="nav-item"><a href="">Nos distributeurs</a></div>
+              <div class="nav-item"><a href="">A propos</a></div>
             </div>
-        
+      
             <!-- Colonne droite -->
-            <div class="col-md-6">
-                <div class="title">Shop</div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="title">Shop</div>
+              <div class="separator"></div>
+              <div class="nav-item"><a href="">Ventes</a></div>
+              <div class="nav-item"><a href="pages/produit.html">Produits</a></div>
+              <div class="nav-item"><a href="">Cuisine</a></div>
+              <div class="nav-item"><a href="">Salle de bain</a></div>
+              <div class="nav-item"><a href="">Luminaire</a></div>
+              <div class="nav-item"><a href="">Maison</a></div>
+              <div class="nav-item"><a href="">Extérieur</a></div>
+              <div class="nav-item"><a href="">Accessoires</a></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title">Rgpd</div>
                 <div class="separator"></div>
-                <div class="nav-item"><a href="">Ventes</a></div>
-                <div class="nav-item"><a href="">Promo en stock</a></div>
-                <div class="nav-item"><a href="">Cuisine</a></div>
-                <div class="nav-item"><a href="">Salle de bain</a></div>
-                <div class="nav-item"><a href="">Luminaire</a></div>
-                <div class="nav-item"><a href="">Maison</a></div>
-                <div class="nav-item"><a href="">Extérieur</a></div>
-                <div class="nav-item"><a href="">Accessoires</a></div>
-            </div>
-            </div>
+                <p>Nous prenons très au sérieux la protection de vos données personnelles. Conformément au Règlement Général sur la Protection des Données (RGPD).
+                    Pour plus d'informations, veuillez consulter notre <span style="text-decoration: underline;"> <a href="https://www.cnil.fr/fr/exemples-de-formulaire-de-collecte-de-donnees-caractere-personnel">Politique de Confidentialité.</a></span></p>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title">Nos RS</div>
+                <div class="separator"></div>
+                <ul>
+                <li class="nav-item nav-picto d-block mt-5">
+                    <a href="https://www.facebook.com/" class="me-2" target="_blank"><img src="img/facebook_picto_blanc.svg" class="picto-nav" alt="Facebook"></a>
+                    <a href="http://twitter.com/" class="me-2" target="_blank"><img src="img/twitter_picto_blanc.svg" class="picto-nav" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_picto_blanc.svg" class="picto-nav" alt="Instagram"></a>
+                </li>
+            </ul>
+              </div>
+          </div>
         </div>
-        </footer>
-
+      </footer>
 </body>
 <script src="../js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

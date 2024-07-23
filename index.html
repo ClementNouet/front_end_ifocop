@@ -19,8 +19,8 @@
 </head> 
 <body>
     <!--BARRE DE NAVIGATION-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-fond scrolled">
-        <div class="container-fluid d-flex justify-content-between align-items-center navigation scrolled">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-fond">
+        <div class="container-fluid d-flex justify-content-between align-items-center navigation">
             <a href="index.html" class="navbar-brand">
                 <img src="img/logo_OH.png" alt="logo Ostuni Home" class="img-fluid">
             </a>
@@ -33,15 +33,15 @@
                         <a class="nav-link couleur-texte" aria-current="page" href="pages/produit.html">Produit</a>
                     </li>
                     <li class="nav-item nav-lien">
-                        <a class="nav-link" href="#">Evènement</a>
+                        <a class="nav-link" href="pages/evenements.html">Evènement</a>
                     </li>
                     <li class="nav-item nav-lien">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
                     </li>
                     <li class="nav-item nav-picto d-flex align-items-center">
-                        <a href="https://www.facebook.com/" class="me-2"><img src="img/facebook_picto.svg" class="picto-nav" alt="Facebook"></a>
-                        <a href="http://twitter.com/" class="me-2"><img src="img/twitter_picto.svg" class="picto-nav" alt="Twitter"></a>
-                        <a href="https://www.instagram.com/"><img src="img/instagram_picto.svg" class="picto-nav" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" class="me-2" target="_blank"><img src="img/facebook_picto.svg" class="picto-nav" alt="Facebook"></a>
+                        <a href="http://twitter.com/" class="me-2" target="_blank"><img src="img/twitter_picto.svg" class="picto-nav" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_picto.svg" class="picto-nav" alt="Instagram"></a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@
                             <img src="img/chair-lounge.png" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
                             <div class="card-body">
                                 <h5 class="card-title">Carapa</h5>
-                                <div class="text-container" id="text-container">
+                                <div class="text-container">
                                     <p id="text-content">“Une Cendrillon qui se transforme en princesse », pourrait-on écrire pour paraphraser Aurelio Zanotta à propos du processus qui a conduit à la création de la chaise longue Carapa. Partant de l'hypothèse d'un fauteuil peu coûteux et démontable, il a été conçu par Marco Zanuso vers la fin des années 1940 pour un concours organisé par le MoMA de New York. Il se compose d'une structure en tubes d'acier courbés à laquelle est suspendu un « sac » en toile de jute, dont les « poches » contiennent deux panneaux de contreplaqué, insérés pour soutenir les deux coussins rembourrés utilisés comme siège et dossier.</p>
                                     <p class="prix">653.77€</p>
                                 </div>
@@ -103,8 +103,8 @@
                                 <img src="img/evier1.jpg" class="card-img-top" alt="Chaise d'intérieur couleur beige ronde">
                                 <div class="card-body">
                                     <h5 class="card-title">Wains</h5>
-                                    <div class="text-container" id="text-container">
-                                        <p id="text-content">Le lavabo reprend le caractère fonctionnel et esthétique de la baignoire, tout en intégrant une tablette latérale, marque de fabrique de toute la collection. De forme ovale ou circulaire, le lavabo Plateau peut disposer d’une tablette dont vous choisissez la position (à gauche ou à droite du lavabo) et la hauteur. Il est également disponible sans tablette pour correspondre à vos besoins et préférences. Disponible avec une colonne autoportante ou sous forme de vasque. Les lavabos Plateau sont fabriqués en LivingTec®, un matériau compact high-tech, non poreux et non toxique, utilisé pour répondre aux normes qualitatives, technologiques et environnementales les plus élevées.</p>
+                                    <div class="text-container">
+                                        <p>Le lavabo reprend le caractère fonctionnel et esthétique de la baignoire, tout en intégrant une tablette latérale, marque de fabrique de toute la collection. De forme ovale ou circulaire, le lavabo Plateau peut disposer d’une tablette dont vous choisissez la position (à gauche ou à droite du lavabo) et la hauteur. Il est également disponible sans tablette pour correspondre à vos besoins et préférences. Disponible avec une colonne autoportante ou sous forme de vasque. Les lavabos Plateau sont fabriqués en LivingTec®, un matériau compact high-tech, non poreux et non toxique, utilisé pour répondre aux normes qualitatives, technologiques et environnementales les plus élevées.</p>
                                         <p class="prix">1163.33€</p>
                                     </div>
                                     <button class="expand-button" onclick="toggleText()" id="expand-button">Voir plus</button>
@@ -179,11 +179,12 @@
             <div class="container">
               <div class="row">
                 <!-- Colonne gauche -->
-                <div class="col-md-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="title">Oh</div>
                   <div class="separator"></div>
                   <div class="nav-item"><a href="">Magasins</a></div>
                   <div class="nav-item"><a href="">Showroom</a></div>
+                  <div class="nav-item"><a href="pages/evenements.html">Evènements</a></div>
                   <div class="nav-item"><a href="">Notre marque</a></div>
                   <div class="nav-item"><a href="">Service après-vente</a></div>
                   <div class="nav-item"><a href="">Nos distributeurs</a></div>
@@ -191,11 +192,11 @@
                 </div>
           
                 <!-- Colonne droite -->
-                <div class="col-md-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="title">Shop</div>
                   <div class="separator"></div>
                   <div class="nav-item"><a href="">Ventes</a></div>
-                  <div class="nav-item"><a href="">Promo en stock</a></div>
+                  <div class="nav-item"><a href="pages/produit.html">Produits</a></div>
                   <div class="nav-item"><a href="">Cuisine</a></div>
                   <div class="nav-item"><a href="">Salle de bain</a></div>
                   <div class="nav-item"><a href="">Luminaire</a></div>
@@ -203,6 +204,23 @@
                   <div class="nav-item"><a href="">Extérieur</a></div>
                   <div class="nav-item"><a href="">Accessoires</a></div>
                 </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Rgpd</div>
+                    <div class="separator"></div>
+                    <p>Nous prenons très au sérieux la protection de vos données personnelles. Conformément au Règlement Général sur la Protection des Données (RGPD).
+                        Pour plus d'informations, veuillez consulter notre <span style="text-decoration: underline;"> <a href="https://www.cnil.fr/fr/exemples-de-formulaire-de-collecte-de-donnees-caractere-personnel">Politique de Confidentialité.</a></span></p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Nos RS</div>
+                    <div class="separator"></div>
+                    <ul>
+                    <li class="nav-item nav-picto d-block mt-5">
+                        <a href="https://www.facebook.com/" class="me-2" target="_blank"><img src="img/facebook_picto_blanc.svg" class="picto-nav" alt="Facebook"></a>
+                        <a href="http://twitter.com/" class="me-2" target="_blank"><img src="img/twitter_picto_blanc.svg" class="picto-nav" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_picto_blanc.svg" class="picto-nav" alt="Instagram"></a>
+                    </li>
+                </ul>
+                  </div>
               </div>
             </div>
           </footer>
