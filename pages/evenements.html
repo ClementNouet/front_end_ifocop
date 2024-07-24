@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body class="produit-page">
@@ -28,14 +29,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item nav-lien ">
-                        <a class="nav-link couleur-texte" aria-current="page" href="produit.html">Produit</a>
+                    <li class="nav-item nav-lien">
+                        <a class="nav-link couleur-texte" href="produit.html">Produit</a>
                     </li>
-                    <li class="nav-item nav-lien active">
-                        <a class="nav-link">Evènement</a>
+                    <li class="nav-item nav-lien  active">
+                        <a class="nav-link couleur-texte" aria-current="page" href="evenements.html">Evènement</a>
                     </li>
                     <li class="nav-item nav-lien">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link couleur-texte" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item nav-picto d-flex align-items-center">
                         <a href="https://www.facebook.com/" class="me-2" target="_blank"><img src="../img/facebook_picto.svg" class="picto-nav" alt="Facebook"></a>
@@ -47,39 +48,43 @@
         </div>
     </nav>
     <!--MAIN-->
-    <div id="carouselExampleControls" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1200x800" class="d-block w-100" alt="Slide 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 1</h5>
-                    <p>Description for Slide 1.</p>
+    <div class="margin-top-150">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-12" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../img/slide-event-1.png" alt="Offre Table en bois">
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1200x800" class="d-block w-100" alt="Slide 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 2</h5>
-                    <p>Description for Slide 2.</p>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/slide-event-2.png" alt="Offre Salon à manger">
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1200x800" class="d-block w-100" alt="Slide 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 3</h5>
-                    <p>Description for Slide 3.</p>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/slide-event-3.png" alt="Offre Décoration extérieur">
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 column-content mt-2">
+                <img id="eventOffer1" src="../img/Event_offer1.png" alt="Offre unique de la semaine" style="display: block;">
+                <img id="eventOfferClique" src="../img/Event_offer_clique.png" alt="Offre salon" style="display: none;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 column-content mt-2">
+                <img id="eventOffer2" src="../img/Event_offer2.png" alt="Offre unique de la semaine 2" style="display: block;">
+                <img id="eventOfferClique2" src="../img/Event_offer_clique2.png" alt="Offre table intérieur" style="display: none;">
+            </div>
+        </div>
+    </div>   
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12 column-content">
+                <a href="contact.html"><img id="eventOffer1" src="../img/Event_offer_exte.png" alt="Offre Extérieur" style="display: block;"></a>
+            </div>
+        </div>
+    </div>   
+
     
    
         
@@ -91,17 +96,17 @@
               <div class="separator"></div>
               <div class="nav-item"><a href="">Magasins</a></div>
               <div class="nav-item"><a href="">Showroom</a></div>
-              <div class="nav-item"><a href="pages/evenements.html">Evènements</a></div>
+              <div class="nav-item"><a href="../pages/evenements.html">Evènements</a></div>
               <div class="nav-item"><a href="">Notre marque</a></div>
               <div class="nav-item"><a href="">Service après-vente</a></div>
               <div class="nav-item"><a href="">Nos distributeurs</a></div>
               <div class="nav-item"><a href="">A propos</a></div>
-            </div>
+            </div>  
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="title">Shop</div>
               <div class="separator"></div>
               <div class="nav-item"><a href="">Ventes</a></div>
-              <div class="nav-item"><a href="pages/produit.html">Produits</a></div>
+              <div class="nav-item"><a href="../pages/produit.html">Produits</a></div>
               <div class="nav-item"><a href="">Cuisine</a></div>
               <div class="nav-item"><a href="">Salle de bain</a></div>
               <div class="nav-item"><a href="">Luminaire</a></div>
@@ -131,7 +136,9 @@
       </footer>
 </body>
 <script src="../js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>                                  

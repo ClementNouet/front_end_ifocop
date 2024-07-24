@@ -1,4 +1,4 @@
-// slide 1
+// Slider index.html
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
@@ -12,31 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(showNextSlide, 4000);
 });
 
-// slide2
-document.addEventListener('DOMContentLoaded', () => {
-    const slider = document.querySelector('.slider2');
-    const slides = document.querySelectorAll('.slide2');
-    let currentIndex = 0;
-
-    function showNextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
-    }
-
-    setInterval(showNextSlide, 4000);
-});
-
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 100) {
-        nav.classList.add('scrolled');
-        nav.classList.remove('none');
-    } else {
-        nav.classList.remove('scrolled');
-        nav.classList.add('none');
-    }
-});
-
+// Voir le texte en entier page index.html
 document.addEventListener("DOMContentLoaded", function() {
     var containers = document.querySelectorAll('.text-container');
     containers.forEach(function(container) {
@@ -80,3 +56,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Offre event Clique
+        document.addEventListener("DOMContentLoaded", function() {
+            const eventOffer1 = document.getElementById("eventOffer1");
+            const eventOfferClique = document.getElementById("eventOfferClique");
+
+            eventOffer1.addEventListener("click", function() {
+                eventOffer1.style.display = "none";
+                eventOfferClique.style.display = "block";
+            });
+
+            eventOfferClique.addEventListener("click", function() {
+                eventOfferClique.style.display = "none";
+                eventOffer1.style.display = "block";
+            });
+        });
+// Offre event Clique 2
+        document.addEventListener("DOMContentLoaded", function() {
+            const eventOffer2 = document.getElementById("eventOffer2");
+            const eventOfferClique2 = document.getElementById("eventOfferClique2");
+
+            eventOffer2.addEventListener("click", function() {
+                eventOffer2.style.display = "none";
+                eventOfferClique2.style.display = "block";
+            });
+
+            eventOfferClique2.addEventListener("click", function() {
+                eventOfferClique2.style.display = "none";
+                eventOffer2.style.display = "block";
+            });
+        });
