@@ -1,6 +1,7 @@
 // Slider index.html
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.slider');
+    console.log('slider :', slider)
     const slides = document.querySelectorAll('.slide');
     let currentIndex = 0;
 
@@ -59,8 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Offre event Clique
         document.addEventListener("DOMContentLoaded", function() {
-            const eventOffer1 = document.getElementById("eventOffer1");
-            const eventOfferClique = document.getElementById("eventOfferClique");
+            const eventOffer1 = document.querySelector("#eventOffer1");
+            console.log("eventOffer1 :", eventOffer1)
+            const eventOfferClique = document.querySelector("#eventOfferClique");
 
             eventOffer1.addEventListener("click", function() {
                 eventOffer1.style.display = "none";
@@ -74,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 // Offre event Clique 2
         document.addEventListener("DOMContentLoaded", function() {
-            const eventOffer2 = document.getElementById("eventOffer2");
-            const eventOfferClique2 = document.getElementById("eventOfferClique2");
+            const eventOffer2 = document.querySelector("#eventOffer2");
+            const eventOfferClique2 = document.querySelector("#eventOfferClique2");
 
             eventOffer2.addEventListener("click", function() {
                 eventOffer2.style.display = "none";

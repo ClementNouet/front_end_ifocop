@@ -1,3 +1,5 @@
+/************************FONTS***********************/
+
 .playfair-display-sc-regular {
     font-family: "Playfair Display SC", serif;
     font-weight: 400;
@@ -100,13 +102,25 @@
     padding-right: var(--bs-navbar-padding-x);
 }
 
-
+/************************GENERAL***********************/
 
 * {
     box-sizing: border-box;
     font-family: "Proza Libre", sans-serif;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/************************HEADER***********************/
+
+.navbar-toggler-icon
+{
+    background-image: url("../img/burgermenu.svg") !important;
+}
 
 nav {
     padding: 0px;
@@ -120,7 +134,7 @@ nav {
 }
 
 .nav-lien a {
-    color: #1e1e1e;
+    color: #1e1e1e !important;
     font-size: 20px;
     padding: 30px;
     transition: color 0.3 ease-in;
@@ -170,11 +184,7 @@ nav {
     padding-left: 30px;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+/************************SLIDER***********************/
 
 .slider-container {
     width: 100%;
@@ -224,9 +234,10 @@ body, html {
 
  .btn-primary:hover {
     background-color: #1fdb78;
- }        .carousel-item {
-  height: 500px;
-}
+ }        
+
+ /************************CARROUSEL EVENEMENT***********************/
+ 
 .carousel-item {
   height: auto;
 }
@@ -247,15 +258,11 @@ body, html {
     background-color: white;
  }
 
-
-
  .card-title {
     font-weight: 800;
     font-size: 36px;
     color: #1fdb78;
  }
- 
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -292,6 +299,8 @@ body, html {
     font-size: 2rem;
     color: black;
 }
+
+/************************PRODUIT***********************/
 
  .prix {
     font-weight: 600;
@@ -336,15 +345,14 @@ body, html {
   cursor: pointer;
 }
 
-/* Style pour le bouton actif */
+/****************** Style pour le bouton actif ******************/
 .filter-btn.active {
-  background-color: #1fdb78; /* Couleur de fond du bouton actif (noir) */
-  color: #fff; /* Couleur du texte du bouton actif (blanc) */
+  background-color: #1fdb78;
+  color: #fff;
   border: #1fdb78 1px solid;
 }
 
-
-    /* Style pour le footer */
+/************************FOOTER***********************/
     .footer {
         background-color: #1fdb78;
         color: white;
@@ -382,6 +390,8 @@ body, html {
     
     footer a:hover, footer a:focus  {
         font-size: 18px;
+        text-decoration: none;
+        color: white;
     }
 
 @media (max-width: 1200px) {
